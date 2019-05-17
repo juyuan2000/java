@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>registe</title>
+    <style>
+        thead{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+        span{
+            color: red;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .thead{
+            text-align: center;
+        }
+        input[type="text"]{
+            width: 80%;
+            height:20px;
+            margin-left: 20px;
+            margin-right:auto;
+        }
+      
+    </style>
+</head>
+<body>
+    <table >
+        <thead>
+             <tr>
+                 <td colspan="2" class="thead">个人简历</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <label for="user_id">姓名</label> 
+                </td>
+                <td>
+                    <input type="text" name="" id="user_id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="user_id">用户名(<span>*</span>)</label> 
+                </td>
+                <td>
+                    <input type="text" name="" id="user_id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>密码(<span>*</span>)</label>
+                </td>
+                <td>
+                    <input type="password" name="" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>年龄</label>
+                </td>
+                <td>
+                    <input type="number" name="" min="18" title="年龄不能小于18岁"
+                    placeholder="请输入年龄">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">性别</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="man">男 &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="woman" checked>女
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">邮箱</label>
+                </td>
+                <td>
+                    <input type="email" name="" id="">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">学历:</label>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="博士" >博士</option>
+                        <option value="硕士">硕士</option>
+                        <option value="学士">学士</option>
+                        <option value="高中">高中</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">个人爱好:</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="" id="" checked>跑步
+                    <input type="checkbox" name="" id="" >游泳
+                    <input type="checkbox" name="" id="" >划水
+                    <input type="checkbox" name="" id="" >真的水
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">身份证号码(<span>*</span>)</label>
+                </td>
+                <td>
+                    <input type="text" name="" id="" pattern="[0-9]{17}[0-9xX]"
+                    title="您输入的身份证格式有误">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">上传照片</label>
+                </td>
+                <td>
+                    <input type="file" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">个人简介</label>
+                </td>
+                <td>
+                    <textarea name="" id="" cols="30" rows="10" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <input type="submit" value="提交">
+                </td>
+            </tr>
+        
+            
+            
+        </tbody>
+    </table>
+
+    
+</body>
+</html>

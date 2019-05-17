@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "bdId">
+        <div id ="pId"></div>
+    </div>
+
+    
+</body>
+<link rel="stylesheet" href="css/point.css">
+<!-- <script src="js/point.js"></script> -->
+<script>
+    
+ window.onload = function () {
+    document.getElementById("bdId").onclick = function (event) {
+    // alert(6);
+    x = event.clientX;
+    y = event.clientY;
+    point = document.getElementById("pId");
+    point.style.left = x+"px";
+    point.style.top= y+"px";
+    // this.appendChild(point);
+    po = document.createElement("div");
+    // alert(po);
+    po.innerHTML=("("+x+" , "+y+")");
+    // parent.appendChild(po);
+    a = this.parentNode;
+    a.appendChild(po);
+
+    }
+}
+
+</script>
+</html>

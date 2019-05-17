@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    #simle_pic img{
+        width: 100px;
+        height:80px;
+    }
+    #bigImg img{
+        width: 300px;
+        height:240px;
+    }
+</style>
+
+<body>
+    <div id=simle_pic>
+        <img src="img/1.jpg" alt="">
+        <img src="img/2.jpg" alt="">
+        <img src="img/3.jpg" alt="">
+    </div>
+    <hr>
+    <div id ="bigImg"></div>
+
+</body>
+
+<script>
+    // function set_img(){
+    //     getElemen
+    // }
+        function set_img1 ( a ) {
+            img = document.getElementsByTagName("img");
+            a = img[a].src; 
+            document.getElementById("bigImg").innerHTML = '<img src="'+this.sc+'r" >';
+        } 
+
+window.onload = function () {
+    n = 0;
+    while (true) {
+        num = document.getElementsByTagName("img").length;
+        a = n %num;
+        setTimeout("set_img1(a)",1000); 
+        
+        n++;
+    }
+    
+
+}
+
+// window.onload = function () {
+    img = document.getElementsByTagName("img");
+
+//     for ( index = 0; index < img.length; index++) {
+
+//        img[index].onmouseover = function(){
+//         document.getElementById("bigImg").innerHTML = '<img src="'+this.sc+'r" >';
+//         this.style.border = "2px solid red";
+//         };
+
+//         img[index].onmouseout = function() {
+//             this.style.border="0px solid red";
+//         }
+//     }
+// }
+
+</script>
+</html>

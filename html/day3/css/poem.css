@@ -1,0 +1,15 @@
+
+img{
+    width: 200px;
+    height: 60px;
+}
+.title{
+    font-family: 华文行楷;
+    font-size: 3em;
+}
+#poem{
+    font-size: 0.5em;
+}
+.c1{
+    color: red;
+}

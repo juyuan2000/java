@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+        <link rel="stylesheet" href="./bootstrap/common/css/bootstrap.css">
+        <script src="./bootstrap/common/js/jquery-3.2.1.js"></script>
+        <script src="./bootstrap/common/js/bootstrap.js"></script>
+        <script src="./bootstrap/common/js/time.js"></script>
+<style>
+    #i{
+        z-index: -1;
+    }
+
+    #login {
+        position: absolute;
+        width:25%;
+        /* float:right; */
+        z-index: 1;
+        margin-top: -350px;
+        margin-left: 1000px;
+        background-color: whitesmoke;
+        padding-top:100px;
+        padding-bottom: 120px;
+        padding-left: 30px;
+        padding-right: 30px; 
+        
+           }
+</style>
+<body>
+    <nav class="navbar navbar-default" style="position:static">
+            <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header" style="margin-top:15px">
+                    <!--  -->
+                        <span style="color:rgb(155, 155, 155)">欢迎来到宠铺网!</span>   
+                    <!-- <a class="navbar-brand" href="#">Brand</a> -->
+                </div> <!--vbanar-header--> 
+                
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">登录</a></li>
+                        <li><a href="#">注册</a> </li>
+                    </ul>
+    
+                <div class="navbar-header" style="margin-top:15px">
+                        <span style="color:rgb(255, 105, 0)">联系电话：029-88888888</span>   
+                </div>
+                    
+                    <!-- <ul class="nav navbar-nav navbar-right">
+                        <2011-08-11-03
+                        </li>li>
+                            
+                    <ul>  -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li>帅</li> -->
+                        <li><a href="#">网站首页</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系商家 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">出售宠物</a></li>
+                                <li><a href="#">加入我们</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="d"></a></li>
+    
+                        
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+    
+                <!-- <div class="navbar-right">
+                    2011-08-11-03
+                </div> -->
+            </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div  id="di">
+        <img src="./bootstrap/common/img/5.jpg" style="width:100%" alt="" id='i'>
+        <div id =login>
+            <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="用户名">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
+                </div>
+                <div style="text-align: center">
+                    <button type="submit" class="btn btn-default">提交</button>
+                    &nbsp; &nbsp;|&nbsp;&nbsp; 
+                    <a href="">注册成员</a>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    
+
+
+</body>
+</html>
