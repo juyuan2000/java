@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #a1{
+            width:100px;
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+
+<script src="./bootstrap/common/js/jquery-3.2.1.js"></script>
+<script>
+    // var a = [
+    //     {name:"张三",age:11},
+    //     {name:"李四",age:22},
+    //     {name:"王五",age:33}
+    // ]
+    // var s = $.map(a,function(b){
+    //     return b.name
+    // })
+    // alert(s);
+    $(function(){
+    $("button:contains('点击x出现')").click(function(){
+        // alert(1);
+        $("div").fadeIn(2000);
+    });
+
+    $("button:contains('点击x消失')").click(function(){
+        // alert(2);
+        $("div").fadeOut(2000);
+    });
+
+    $("button:contains('点击出现1')").click(function(){
+        
+        $("div").slideDown(1000);
+    });
+
+    $("button:contains('点击消失1')").click(function(){
+        // alert(2);
+        $("div").slideUp(1000);
+    });
+
+    $("button:contains('自定义')").click(function(){
+            $("div").animate({
+           "margin-left":"300px",
+            },1000)
+    })
+
+    })
+    </script>    
+</body>
+<button>点击x出现</button>
+<button>点击x消失</button>
+<button>点击出现1</button>
+<button>点击消失1</button>
+<button>自定义</button>
+
+<div id = "a1">   </div>
+</html>
