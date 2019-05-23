@@ -1,0 +1,10 @@
+package com.djs.entity;
+
+public class Pet {
+	private int id;
+	private String kind;
+	private String color;
+	private double price;
+	
+
+}

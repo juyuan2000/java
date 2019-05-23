@@ -1,0 +1,9 @@
+package com.djs.service;
+
+public class PetService {
+	
+	public findAll() {
+		
+	}
+
+}

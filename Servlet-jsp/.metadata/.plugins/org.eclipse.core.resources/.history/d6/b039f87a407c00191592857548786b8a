@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action='' method="get">
+		<input type="text" name="姓名" placeholder="请输入姓名">
+		<input type="checkbox" value="足球"> 足球
+		<input type="checkbox" value="足球1"> 足球1
+		<input type="checkbox" value="足球2"> 足球2
+		<input type="checkbox" value="足球3"> 足球3
+		<input type="checkbox" value="足球4"> 足球4
+		<input type="submit" value='登录'>
+		
+	</form>
+
+</body>
+</html>

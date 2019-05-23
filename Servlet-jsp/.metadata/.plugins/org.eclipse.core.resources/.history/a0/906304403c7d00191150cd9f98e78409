@@ -1,0 +1,11 @@
+package com.djs.util;
+
+public class CrudTemplate {
+	private DButil db = DButil.getInstance();
+	
+	public void update (String sql,Object) {
+		db.connection();
+		db.pre(sql, values);
+	}
+
+}

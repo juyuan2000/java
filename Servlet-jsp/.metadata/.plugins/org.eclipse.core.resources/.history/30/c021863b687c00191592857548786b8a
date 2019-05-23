@@ -1,0 +1,9 @@
+package com.djs.test;
+
+public class Entity {
+	public String id;
+	public String uId;
+	public String uname;
+	
+
+}

@@ -1,0 +1,5 @@
+package com.djs.entity;
+
+public class Pet {
+
+}

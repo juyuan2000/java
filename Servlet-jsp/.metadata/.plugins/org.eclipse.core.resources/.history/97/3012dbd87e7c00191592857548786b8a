@@ -1,0 +1,60 @@
+package com.djs.dao;
+
+import java.sql.*;
+import java.sql.SQLException;
+
+public class QueryDao {
+	
+	
+	    public  void main(String[] args) {
+	        Connection connection = null;
+	        Statement statement = null;
+	        ResultSet resultSet = null;
+	        try {
+	            Class.forName("com.mysql.jdbc.Driver");
+	          connection = DriverManager.getConnection("jdbc:mysql://120.55.201.129:3306/db_user?useSSL=false", "root", "Juyuan689");
+	//黄色部分为 需要显式禁用SSL设置usessl = false，或设置usessl =true提供服务器证书验证信任库。
+	          statement = connection.createStatement();
+	            resultSet = statement.executeQuery("SELECT * FROM user_table");
+	            while(resultSet.next()){
+	                System.out.println(resultSet.getInt(1));
+	                System.out.println(resultSet.getString(2));
+	                System.out.println(resultSet.getString(3));
+	                System.out.println(resultSet.getString(4));
+	            }
+
+
+	        }catch (SQLException e){
+	            e.printStackTrace();
+
+	        }catch (ClassNotFoundException e){
+	            e.printStackTrace();
+	        }finally{
+	            if(resultSet != null){
+
+	                try {
+	                    resultSet.close();
+	                } catch (SQLException e) {
+	                    e.printStackTrace();
+	                }
+	            }
+	            if(statement != null){
+	                try {
+	                    statement.close();
+	                } catch (SQLException e) {
+	                    e.printStackTrace();
+	                }
+	            }
+	            if(connection != null){
+	                try {
+	                    connection.close();
+	                } catch (SQLException e) {
+	                    e.printStackTrace();
+	                }
+	            }
+
+	        }
+	    }
+
+	
+}

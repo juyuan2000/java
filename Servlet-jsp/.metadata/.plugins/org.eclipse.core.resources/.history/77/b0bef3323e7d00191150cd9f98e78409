@@ -1,0 +1,38 @@
+package com.djs.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.junit.jupiter.api.Test;
+
+import com.djs.entity.Pet;
+import com.djs.util.CrudTemplate;
+
+class CrudTest {
+
+	@Test
+	void test() {
+		String sql = "select * from pet";
+		CrudTemplate ct = new CrudTemplate();
+		ResultSet rs = ct.query(sql);
+		try {
+			while (rs.next()) {
+				Pet p = new Pet(
+						rs.getInt("id"),
+						rs.getString("kind"),
+						rs.getString(""),
+						rs.getDouble(columnLabel)
+						);
+				
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+//		fail("Not yet implemented");
+	}
+
+}

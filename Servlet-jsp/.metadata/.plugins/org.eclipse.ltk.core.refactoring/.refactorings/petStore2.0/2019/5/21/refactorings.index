@@ -1,0 +1,24 @@
+1558521002381	Copy package
+1558521017195	Delete element
+1558521020927	Delete element
+1558521053962	Delete element
+1558522097139	Copy package
+1558522103277	Delete element
+1558522118505	Rename package 'com.djs.test.copy'
+1558523510419	Extract local variable 'sql2'
+1558529676605	Delete element
+1558530647443	Copy package
+1558530676191	Copy package
+1558530702139	Delete element
+1558530704522	Delete element
+1558530758037	Copy package
+1558530767551	Copy package
+1558530783246	Delete element
+1558530793725	Rename package 'com.djs.service.copy'
+1558531589055	Copy package
+1558531644678	Rename package 'com.djs.controller.copy'
+1558531885646	Delete element
+1558534470786	Move 'show.jsp' to 'WebContent'
+1558535194281	Move 'show.jsp' to 'html'
+1558535344591	Move 'show.jsp' to 'WebContent'
+1558597572049	Copy file

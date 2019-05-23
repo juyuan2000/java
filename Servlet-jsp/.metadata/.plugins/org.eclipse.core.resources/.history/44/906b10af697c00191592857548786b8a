@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="java.util.*,com.djs.test.*" 
+    %>
+    
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>>    
+<% 
+	List<User> l = new ArrayList();
+	l.add(new User("1","zhangsan","1111"));
+	l.add(new User("1","zhangsan","1111"));
+	l.add(new User("1","zhangsan","1111"));
+	l.add(new User("1","zhangsan","1111"));
+	l.add(new User("1","zhangsan","1111"));
+	request.setAttribute("key", l);
+
+
+%>>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

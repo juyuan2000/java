@@ -1,0 +1,17 @@
+package com.djs.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import com.djs.dao.QueryDao;
+
+class QueryTest {
+
+	@Test
+	void test() {
+		QueryDao qd = new QueryDao();
+		fail("Not yet implemented");
+	}
+
+}

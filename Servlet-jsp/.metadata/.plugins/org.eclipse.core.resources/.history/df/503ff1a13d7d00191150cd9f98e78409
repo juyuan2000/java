@@ -1,0 +1,19 @@
+package com.djs.entity;
+
+public class Pet {
+	int id;
+	String kind;
+	String color;
+	double price;
+	
+	public Pet (int id,String kind,String color,double price) {
+		
+	}
+	@Override
+	public String toString() {
+		return "Pet [id=" + id + ", kind=" + kind + ", color=" + color + ", price=" + price + "]";
+	}
+	
+	
+
+}

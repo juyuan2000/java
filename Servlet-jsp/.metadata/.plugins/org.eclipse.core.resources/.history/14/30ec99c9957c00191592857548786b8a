@@ -1,0 +1,12 @@
+package com.djs.controller;
+
+import com.djs.service.PetService;
+
+public class PetController {
+	private PetService ps= new PetService();
+	
+	public List<Pet> findAll(){
+		
+	}
+
+}

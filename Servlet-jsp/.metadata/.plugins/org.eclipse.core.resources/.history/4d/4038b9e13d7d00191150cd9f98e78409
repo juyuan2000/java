@@ -1,0 +1,24 @@
+package com.djs.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.sql.ResultSet;
+
+import org.junit.jupiter.api.Test;
+
+import com.djs.util.CrudTemplate;
+
+class CrudTest {
+
+	@Test
+	void test() {
+		String sql = "select * from pet";
+		CrudTemplate ct = new CrudTemplate();
+		ResultSet rs = ct.query(sql);
+		while (rs.next()) {
+			
+		}
+//		fail("Not yet implemented");
+	}
+
+}

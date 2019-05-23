@@ -1,0 +1,84 @@
+
+5月 22, 2019 16:29:52.92 NEW SESSION
+5月 22, 2019 16:29:52.92 
+5月 22, 2019 16:29:52.92 runtime error R6016
+5月 22, 2019 16:29:52.93 - not enough space for thread data
+5月 22, 2019 16:31:33.43 [4684:6512:0522/163133.436:ERROR:browser_process_sub_thread.cc(209)] Waited 70 ms for network service
+5月 22, 2019 22:23:37.55 [4892:6652:0522/222337.551:ERROR:browser_process_sub_thread.cc(209)] Waited 182 ms for network service
+5月 22, 2019 22:30:19.84 [8740:4596:0522/223019.846:ERROR:browser_process_sub_thread.cc(209)] Waited 363 ms for network service
+5月 22, 2019 22:31:13.17 [8020:6764:0522/223113.178:ERROR:browser_process_sub_thread.cc(209)] Waited 124 ms for network service
+
+5月 23, 2019 16:13:18.02 NEW SESSION
+5月 23, 2019 16:13:18.02 [6764:5348:0523/161317.706:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 16:13:59.78 [6764:5348:0523/161359.787:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 16:15:13.95 [6764:5348:0523/161513.950:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 16:15:49.04 [6764:6112:0523/161549.044:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 16:17:27.03 [6764:5348:0523/161727.036:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 16:19:47.73 [6764:6112:0523/161947.734:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 16:21:33.25 [6764:5348:0523/162133.252:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 16:24:39.50 [6764:6112:0523/162439.501:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 16:28:17.37 [6764:5348:0523/162817.375:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 16:29:16.27 [6764:6112:0523/162916.278:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 16:35:35.62 [6764:6112:0523/163535.621:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 16:38:38.39 [6764:5348:0523/163838.396:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 16:45:56.85 [6764:6112:0523/164556.857:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 16:48:59.41 [6764:5348:0523/164859.417:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 16:59:20.44 [6764:5348:0523/165920.443:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 16:59:47.88 [6764:6112:0523/165947.885:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 17:09:41.47 [6764:5348:0523/170941.478:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 17:13:38.93 [6764:6112:0523/171338.934:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 17:20:02.49 [6764:5348:0523/172002.497:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 17:26:47.97 [6764:6112:0523/172647.972:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 17:30:23.52 [6764:5348:0523/173023.519:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 17:40:18.01 [6764:6112:0523/174018.015:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 17:40:44.54 [6764:5348:0523/174044.543:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 17:51:05.56 [6764:5348:0523/175105.563:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 17:54:18.04 [6764:6112:0523/175418.042:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 18:01:26.58 [6764:5348:0523/180126.582:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 18:07:27.07 [6764:6112:0523/180727.075:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 18:11:47.60 [6764:5348:0523/181147.606:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 18:13:16.23 [6764:6212:0523/181316.236:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:19.78 [6764:6212:0523/181319.787:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:20.67 [6764:6212:0523/181320.677:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:21.28 [6764:6212:0523/181321.286:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:21.87 [6764:6212:0523/181321.874:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:22.40 [6764:6212:0523/181322.408:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:22.93 [6764:6212:0523/181322.929:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:23.44 [6764:6212:0523/181323.449:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:23.97 [6764:6212:0523/181323.969:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:24.49 [6764:6212:0523/181324.491:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:25.01 [6764:6212:0523/181325.012:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:25.53 [6764:6212:0523/181325.533:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:26.05 [6764:6212:0523/181326.054:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:26.57 [6764:6212:0523/181326.575:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:27.09 [6764:6212:0523/181327.098:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:27.62 [6764:6212:0523/181327.619:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:28.14 [6764:6212:0523/181328.144:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:28.66 [6764:6212:0523/181328.665:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:29.18 [6764:6212:0523/181329.186:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:29.70 [6764:6212:0523/181329.707:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:30.22 [6764:6212:0523/181330.228:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:30.75 [6764:6212:0523/181330.749:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:31.27 [6764:6212:0523/181331.269:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:31.79 [6764:6212:0523/181331.793:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:32.31 [6764:6212:0523/181332.314:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:32.83 [6764:6212:0523/181332.835:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:33.35 [6764:6212:0523/181333.356:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:33.87 [6764:6212:0523/181333.877:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:34.39 [6764:6212:0523/181334.398:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:34.92 [6764:6212:0523/181334.919:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:35.44 [6764:6212:0523/181335.440:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:35.96 [6764:6212:0523/181335.961:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:36.48 [6764:6212:0523/181336.482:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:37.00 [6764:6212:0523/181337.003:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:37.52 [6764:6212:0523/181337.524:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:38.04 [6764:6212:0523/181338.047:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:38.72 [6764:6212:0523/181338.723:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:39.24 [6764:6212:0523/181339.244:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:39.76 [6764:6212:0523/181339.765:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:13:40.28 [6764:6212:0523/181340.286:ERROR:platform_sensor_reader_win.cc(242)] NOT IMPLEMENTED
+5月 23, 2019 18:21:27.10 [6764:6112:0523/182127.102:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 18:22:08.63 [6764:5348:0523/182208.632:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 18:32:29.66 [6764:5348:0523/183229.663:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+5月 23, 2019 18:34:15.14 [6764:6112:0523/183415.139:ERROR:checkin_request.cc(219)] Failed to get checkin response. Fetcher failed. Retrying.
+5月 23, 2019 18:42:50.68 [6764:5348:0523/184250.688:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.

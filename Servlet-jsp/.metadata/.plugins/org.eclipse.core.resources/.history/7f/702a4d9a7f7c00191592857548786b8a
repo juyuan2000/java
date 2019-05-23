@@ -1,0 +1,14 @@
+package com.djs.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class QueryTest {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

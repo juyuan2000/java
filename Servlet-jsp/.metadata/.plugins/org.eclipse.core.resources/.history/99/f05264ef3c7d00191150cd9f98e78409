@@ -1,0 +1,17 @@
+package com.djs.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import com.djs.util.CrudTemplate;
+
+class CrudTest {
+
+	@Test
+	void test() {
+		CrudTemplate ct = new CrudTemplate();
+//		fail("Not yet implemented");
+	}
+
+}

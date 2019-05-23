@@ -1,0 +1,84 @@
+package com.djs.util;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.alibaba.druid.pool.DruidDataSource;
+
+public class DbUtil {
+	private static DbUtil instance = new DbUtil();
+	private DruidDataSource ds;
+	private PreparedStatement pst;
+	private Connection conn;
+	private ResultSet rs;
+
+	private DbUtil() {
+		init();
+	}
+
+	public static DbUtil getInstance() {
+		return instance;
+	}
+
+	public void init() {
+		ds = new DruidDataSource();
+		ds.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
+		ds.setUsername("ee");
+		ds.setPassword("123");
+	}
+
+	public void connect() {
+		try {
+			conn = ds.getConnection();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void prepareStatement(String sql,Object...values) {
+		try {
+			pst  = conn.prepareStatement(sql);			
+			for(int i =0; i < values.length;i++) {
+				pst.setObject(i+1, values[i]);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void executeUpdate() {
+		try {
+			pst.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public ResultSet executeQuery() {
+		try {
+			rs = pst.executeQuery();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return rs;
+	}
+
+	public void close() {
+		try {
+			if (rs != null) {
+				rs.close();
+			}
+			if (pst != null) {
+				pst.close();
+			}
+			if (conn != null) {
+				conn.close();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

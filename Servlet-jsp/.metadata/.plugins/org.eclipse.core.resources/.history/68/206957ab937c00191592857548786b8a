@@ -1,0 +1,12 @@
+package com.djs.service;
+
+import com.djs.entity.Pet;
+
+public class PetService {
+	
+	public Pet findAll() {
+		
+		
+	}
+
+}

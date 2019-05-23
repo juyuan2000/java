@@ -1,0 +1,28 @@
+package com.djs.test;
+
+public class User {
+	public String id;
+	public String uId;
+	public String uname;
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getuId() {
+		return uId;
+	}
+	public void setuId(String uId) {
+		this.uId = uId;
+	}
+	public String getUname() {
+		return uname;
+	}
+	public void setUname(String uname) {
+		this.uname = uname;
+	}
+	
+
+}

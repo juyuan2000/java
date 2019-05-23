@@ -1,0 +1,6 @@
+package com.djs.util;
+
+public class CrudTemplate {
+	DButil db = DButil.getInstance(); 
+
+}

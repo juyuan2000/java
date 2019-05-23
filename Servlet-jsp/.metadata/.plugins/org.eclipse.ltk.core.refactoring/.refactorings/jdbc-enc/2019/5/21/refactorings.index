@@ -1,0 +1,9 @@
+1558597195347	Delete element
+1558598029313	Rename type 'jdbc'
+1558599310464	Extract local variable 'connection'
+1558601343254	Extract local variable 'createStatement'
+1558601486124	Extract local variable 'prepareStatement'
+1558602269374	Extract local variable 'executeQuery'
+1558603437456	Extract local variable 'executeQuery'
+1558603737309	Extract local variable 'query'
+1558607896003	Delete element

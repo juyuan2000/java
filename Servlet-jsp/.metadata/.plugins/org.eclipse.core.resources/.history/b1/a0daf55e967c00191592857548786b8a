@@ -1,0 +1,21 @@
+package com.djs.controller;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServlet;
+
+import com.djs.entity.Pet;
+import com.djs.service.PetService;
+
+public class PetController extends HttpServlet  {
+	
+	
+	
+	
+	private PetService ps= new PetService();
+	
+	public List<Pet> findAll(){
+		return ps.findAll();
+	}
+
+}

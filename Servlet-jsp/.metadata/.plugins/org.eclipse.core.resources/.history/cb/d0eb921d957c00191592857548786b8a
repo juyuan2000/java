@@ -1,0 +1,19 @@
+package com.djs.service;
+
+import java.util.List;
+
+import com.djs.dao.QueryDao;
+import com.djs.entity.Pet;
+
+public class PetService {
+	private QueryDao qd= new QueryDao();
+	
+	public List<Pet> findAll() {
+		
+		
+		
+		return qd.query();
+		
+	}
+
+}

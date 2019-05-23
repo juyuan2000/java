@@ -1,0 +1,13 @@
+package com.djs.test;
+
+public class User {
+	public String id;
+	public String upw;
+	public String uname;
+	public User(String id, String upw,String uname) {
+		this.id = id;
+		this.uname = uname;
+		this.upw = upw;
+	}
+
+}
