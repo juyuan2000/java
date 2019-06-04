@@ -1,3 +1,0 @@
-#Tomcat publish data
-#Thu May 23 15:31:27 CST 2019
-org.eclipse.jst.jee.server\:petStore2.0=D\:\\tomcat\\apache-tomcat-8.5.41\\webapps\\petStore2.0

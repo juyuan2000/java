@@ -6,7 +6,7 @@ public class Pet {
 	private String color;
 	private double price;
 	
-	public Pet (int id, String kind, String color) {
+	public Pet (int id, String kind, String color,double price) {
 		this.id = id;
 		this.kind = kind;
 		this.color = color;
