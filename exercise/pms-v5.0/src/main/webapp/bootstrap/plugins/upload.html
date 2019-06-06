@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传</title>
+    <link rel="stylesheet" href="bootstrap/common/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/plugin/fileinput/css/fileinput.css">
+    <script src="bootstrap/common/js/jquery-3.2.1.js"></script>
+    <script src="bootstrap/common/js/bootstrap.js"></script>
+    <script src="bootstrap/plugin/fileinput/js/fileinput.js"></script>
+    <script src="bootstrap/plugin/fileinput/js/zh.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <input type="file" name="image" id="imgId"/>
+</div>
+<script>
+    $("#imgId").fileinput({
+        uploadUrl: 'upload.action',
+        language: 'zh',
+        showBrowse: false,
+        showUpload: false,
+        browseOnZoneClick: true,
+        showCaption: false,
+        showRemove: false
+    });
+    $("#imgId").on("fileuploaded", function (event, data) {
+        alert(data.response.fileName);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.djs.mapper.IPetMapper">
+
+	<resultMap type="Category" id="categoryMap">
+		<id property="id" column="category_id" />
+		<result property="name" column="category_name" />
+	</resultMap>
+
+	<resultMap type="Pet" id="petMap">
+		<id property="id" column="pet_id" />
+		<result property="name" column="pet_name" />
+		<result property="price" column="pet_price" />
+		<result property="img" column="pet_img" />
+		<result property="address" column="pet_address" />
+		<association property="category" resultMap="categoryMap" />
+	</resultMap>
+	
+	
+	<sql id="petSQL">
+		SELECT p.*,c.* FROM pet_tab p, category_tab c WHERE p.pet_category=c.category_id
+	</sql>
+	
+	<insert id="saveCategory">
+		INSERT INTO category_tab(category_name) VALUES(#{name})
+	</insert>
+	
+	<insert id="savePet">
+		INSERT INTO pet_tab(pet_name,pet_price,pet_img,pet_address,pet_category)
+		 VALUES(#{name},#{price},#{img},#{address},#{category.id})
+	</insert>
+	
+	<select id="findAllCategory" resultMap="categoryMap">
+		SELECT * FROM category_tab
+	</select>
+	
+	<select id="findAllPet" resultMap="petMap">
+		<include refid="petSQL"/>
+	</select>
+
+
+
+</mapper>

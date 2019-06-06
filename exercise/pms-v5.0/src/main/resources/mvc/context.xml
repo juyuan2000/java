@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+   <bean id="/province.action" class="com.djs.controller.ChinaController" method="province"/>
+   <bean id="/city.action" class="com.djs.controller.ChinaController" method="city"/>
+   <bean id="/area.action" class="com.djs.controller.ChinaController" method="area"/>
+   <bean id="/addCategory.action" class="com.djs.controller.PetController" method="addCategory"/>
+   <bean id="/findAllCategory.action" class="com.djs.controller.PetController" method="findAllCategory"/>
+   <bean id="/addPet.action" class="com.djs.controller.PetController" method="addPet"/>
+   <bean id="/findAllPet.action" class="com.djs.controller.PetController" method="findAllPet"/>
+   <bean id="/upload.action" class="com.djs.controller.PetController" method="upload"/>
+   
+</beans>

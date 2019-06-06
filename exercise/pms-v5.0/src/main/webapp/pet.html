@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>类型管理</title>
+    <link rel="stylesheet" href="bootstrap/common/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/plugins/sweetAlert/css/sweetalert2.css">
+    <link rel="stylesheet" href="bootstrap/plugins/fileinput/css/fileinput.css">
+
+    <script src="bootstrap/common/js/jquery-3.2.1.js"></script>
+    <script src="bootstrap/common/js/bootstrap.min.js"></script>
+    <script src="bootstrap/plugins/sweetAlert/js/sweetalert2.js"></script>
+    <script src="bootstrap/plugins/fileinput/js/fileinput.js"></script>
+    <script src="bootstrap/plugins/fileinput/js/zh.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <a class="navbar-brand" href="#">Title</a>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="#">类型管理</a>
+            </li>
+            <li>
+                <a href="pet.html">宠物管理</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div>
+            <button class="btn btn-info" data-toggle="modal" href='#modal-addPet'><span
+                    class="glyphicon glyphicon-plus"></span>添加宠物信息</button>
+            <button class="btn btn-primary" id="searchBtnId"><span
+                    class="glyphicon glyphicon-search"></span>查询宠物</button>
+        </div>
+
+
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>宠物名称</th>
+                    <th>宠物价格</th>
+                    <th>宠物图片</th>
+                    <th>宠物出生地</th>
+                    <th>宠物类型</th>
+                </tr>
+            </thead>
+            <tbody id="tabId">
+
+            </tbody>
+        </table>
+
+
+
+    </div>
+
+
+
+    <div class="modal fade" id="modal-addPet">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">添加宠物类型</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form action="" method="POST" class="form-horizontal" role="form" id="addForm">
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3">宠物名称</label>
+                            <div class="col-md-9">
+                                <input name="name" placeholder="类型名称" class="form-control" id="nameId">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">宠物价格</label>
+                            <div class="col-md-9">
+                                <input name="price" placeholder="宠物价格" class="form-control" id="priceId">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">宠物图片</label>
+                            <div class="col-md-9">
+                                <input name="img" placeholder="宠物图片" class="form-control" id="imgId">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3"></label>
+
+                            <div class="col-md-3">
+                                <select class="form-control" required="required" id="provinceId"></select>
+                            </div>
+
+                            <div class="col-md-3">
+                                <select class="form-control" required="required" id="cityId"></select>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-control" required="required" id="areaId"> </select>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">宠物地址</label>
+                            <div class="col-md-9">
+                                <input name="address" placeholder="宠物地址" class="form-control" id="addressId">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">宠物类型</label>
+                            <div class="col-md-9">
+                                <select name="categoryId" id="categoryId" class="form-control">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3"></label>
+                            <div class="col-sm-9 ">
+                                <button type="button" class="btn btn-primary btn-block" id="addBtnId">添加宠物信息</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal-upload">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">上传图片</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="file" name="image" id="uploadImgId" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $.get("api/findAllCategory.action", function (list) {
+            $("#categoryId").empty();
+            $("#categoryId").append($("<option>").text("请选择宠物类型"));
+            $.each(list, function (index, category) {
+                var _option = $("<option>");
+                _option.text(category.name);
+                _option.val(category.id);
+                $("#categoryId").append(_option);
+            })
+        }, 'json');
+
+
+        $.get('api/province.action', function (list) {
+            $("#provinceId").empty();
+            $("#cityId").empty();
+            $("#provinceId").append($('<option value="null">请选择省</option>'));
+            $.each(list, function (index, pro) {
+                var _option = $("<option>");
+                _option.val(pro);
+                _option.text(pro);
+                $("#provinceId").append(_option);
+            });
+        }, 'json');
+
+        $("#provinceId").change(function () {
+            $.get('api/city.action', { name: $(this).val() }, function (list) {
+                $("#cityId").empty();
+                $("#areaId").empty();
+                $("#cityId").append($('<option value="null">请选择城市</option>'));
+                $.each(list, function (index, city) {
+                    var _option = $("<option>");
+                    _option.val(city.name);
+                    _option.text(city.name);
+                    $("#cityId").append(_option);
+                });
+            }, 'json');
+        });
+
+        $("#cityId").change(function () {
+            $.get('api/area.action', { name: $(this).val() }, function (list) {
+                $("#areaId").empty();
+                $("#areaId").append($('<option value="null">请选择区县</option>'));
+                $.each(list, function (index, area) {
+                    var _option = $("<option>");
+                    _option.val(area.name);
+                    _option.text(area.name);
+                    $("#areaId").append(_option);
+                });
+            }, 'json');
+        });
+
+        $("#areaId").change(function () {
+            $("#addressId").val($("#provinceId").val() + $("#cityId").val() + $(this).val())
+        });
+
+        $("#imgId").click(function () {
+            $("#modal-upload").modal('show');
+        });
+
+        $("#uploadImgId").fileinput({
+            uploadUrl: 'api/upload.action',
+            language: 'zh',
+            showBrowse: false,
+            showUpload: false,
+            browseOnZoneClick: true,
+            showCaption: false,
+            showRemove: false
+        });
+        $("#uploadImgId").on("fileuploaded", function (event, data) {
+          
+            swal("Good job!", "添加"+data.response.fileName+"成功", "success");
+            $("#imgId").val(data.response.fileName);
+        });
+
+
+        $("#addBtnId").click(function(){
+            var _data = $("#addForm").serialize();
+            $.post('api/addPet.action',_data,
+            function(msg){
+                swal("Good job!", msg, "success");
+            });
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
